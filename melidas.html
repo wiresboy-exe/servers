@@ -80,7 +80,11 @@ span.psw {
 <h1 style="padding-bottom: 10px;" class="center">WiresDev<br />Servers</h1>
 <form class="center" action="/login" method="get">
   <div class="container">
-    <h2>Stats</h2><br />
-    <p>Loading...</p>
+      <label for="uname" id=""><b>URL</b></label>
+      <input type="text" name="uname" class="chatinput" id="chatinput" placeholder="Enter Server URL">
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="pword" required>
+    <button type="submit">Connect</button>
   </div>
 </form>

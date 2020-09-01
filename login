@@ -1,0 +1,90 @@
+<style>
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  background-image: linear-gradient(to bottom right, #000000, #050023);
+  padding-top: 17%;
+}
+
+h1 {
+  color: #373fff;
+}
+
+.center {
+  display: table;
+  margin: 0 auto;
+  text-align: center; 
+}
+
+.dotted {border-style: dotted;}
+.dashed {border-style: dashed;}
+.solid {border-style: solid;}
+.double {border-style: double;}
+.groove {border-style: groove;}
+.ridge {border-style: ridge;}
+.inset {border-style: inset;}
+.outset {border-style: outset;}
+.none {border-style: none;}
+.hidden {border-style: hidden;}
+.mix {border-style: dotted dashed solid double;}
+  
+form {
+  border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #0093b5;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+</style>
+<script>
+  function gotoserver(){
+    
+  }
+</script>
+<h1 style="padding-bottom: 10px;" class="center">WiresDev<br />Servers</h1>
+<form class="center" action="/login" method="get">
+  <div class="container">
+    <button onclick="gotoserver()">Connect to server</button>
+  </div>
+</form>

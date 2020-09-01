@@ -79,7 +79,15 @@ span.psw {
 </style>
 <script>
   function gotoserver(){
+    function getUrlParam(parameter, defaultValue) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(parameter) || defaultValue;
+    }
+
+    var url = getUrlParam('uname', 'na')
+    var pass = getUrlParam('pword', 'na')
     
+    window.location.href = url+'?pass='+pass
   }
 </script>
 <h1 style="padding-bottom: 10px;" class="center">WiresDev<br />Servers</h1>
